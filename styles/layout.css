@@ -1,0 +1,88 @@
+.navbar{
+    width: 100%;
+    background-color: #1A0B2E;
+    padding: 20px 0;
+}
+
+.nav-container{
+    width: 90%;
+    max-width: 1240px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    font-size: 26px;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.logo span{
+    background: linear-gradient(90deg, #8a5cff, #ff4ecd);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.menu{
+    display: flex;
+  align-items: center;
+  gap: 32px;
+}
+
+/* Button */
+.nav-btn a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 28px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff6a00, #ff00cc);
+  color: white;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+/* Arrow Icon */
+.nav-btn a img {
+  width: 24px;
+}
+
+.nav-btn a:hover img {
+  transform: translateX(4px);
+  transition: 0.1s;
+}
+
+
+
+.hamburger {
+  display: none;
+}
+
+.hamburger img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 576px) {
+  .menu {
+    display: none;
+  }
+
+  .nav-btn {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+}
