@@ -38,7 +38,7 @@
 
 .menu{
     display: flex;
-  /* align-items: center; */
+  align-items: center;
   gap: 32px;
 }
 
@@ -78,20 +78,132 @@
   cursor: pointer;
 }
 
+/* banner */
+/* ===== Banner ===== */
+.banner {
+  width: 100%;
+  height: 760px;
+  background-image: url(../assets/hero-bg.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.banner-inner {
+  width: 100%;
+  height: 100%;
+  background: rgba(26, 11, 46, 0.65);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #ffffff;
+}
+
+/* Circle */
+.circle-wrap {
+  position: relative;
+  top: px;
+  margin-bottom: 30px;
+}
+
+.circle-img {
+  width: 350px;
+  height: 350px;
+}
+
+.mic-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+
+/* NEW badge */
+.new-badge {
+  position: absolute;
+  top: 20px;
+  right: 33px;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #00FF88;
+  color: #000;
+  box-shadow:0px 0px 10px#00FF88;
+}
+
+/* Text */
+.banner-tag {
+  font-size: 14px;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+}
+.mobile-break{
+  display: none;
+}
+.banner-title {
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.banner-desc {
+  max-width: 600px;
+  font-size: 16px;
+  color: #d0d0d0;
+  margin-bottom: 30px;
+}
+
+/* Buttons */
+.banner-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.banner-buttons a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 14px 32px;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.btn-spotify {
+  background:linear-gradient(90deg, #F7E93F 0%, #FB09B4 51%, #9100F8 100%) 
+}
+.spoty-text{
+  color: white;
+}
+
+.btn-subscribe {
+  border: 1px solid #00FF88;
+  color: #00FF88;
+}
+
+.banner-buttons img {
+  width: 18px;
+}
+
+
+/* banner end  */
+
 @media (max-width: 576px) {
   .hamburger {
     display: block;
   }
   .menu {
-    position: absolute;
+    z-index: 9999;
+    position: relative;
     top: 80px;
     left: 0;
     width: 100%;
-    background: #0b0b2c;
+    background: none;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     gap: 20px;
-    padding: 20px 0;
     display: none;
   }
    #menu-toggle:checked ~ .menu {
@@ -101,6 +213,47 @@
   .nav-btn {
     display: none;
   }
+  .new-badge {
+  position: absolute;
+  top: 10px;
+  right: -5px;
+  padding: 6px 14px;
+  font-size: 12px;
+  border-radius: 20px;
+  background: #00FF88;
+  color: #000;
+  box-shadow:0px 0px 10px#00FF88;
+}
 
+
+  /* banner  */
+.banner {
+    height: auto;
+    padding: 5px 0;
+    background-image: url("../assets/mobile-bg-image.png");
+  }
+
+  .circle-img {
+    width: 200px;
+    height: 200px;
+  }
+
+  .mic-img {
+    width: 60px;
+  }
+
+  .banner-title {
+    font-size: 32px;
+  }
+
+  .banner-desc {
+    font-size: 14px;
+    padding: 0 20px;
+  }
+
+  .mobile-break{
+    display: block;
+  }
+  /* banner end  */
   
 }
