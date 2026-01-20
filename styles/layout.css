@@ -663,7 +663,7 @@ body {
         grid-row: span 1;
         flex-direction: column; 
     }
-  /* why choose */
+  /* why choose end*/
 
   /* featured */
     .stats-grid { flex-wrap: wrap; }
@@ -671,6 +671,7 @@ body {
     .features-grid { grid-template-columns: 1fr; }
     .card-tall, .card-wide, .card-big { grid-column: span 1; grid-row: span 1; flex-direction: column; }
     .episodes-grid { grid-template-columns: 1fr; }
+    /* featured end  */
 
     /* meet the host */
 .host-card {
@@ -716,6 +717,7 @@ body {
         gap: 20px 40px; 
         margin-bottom: 30px;
     }
+    
 
     .platform span {
         font-size: 14px;
